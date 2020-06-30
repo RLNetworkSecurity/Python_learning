@@ -11,8 +11,8 @@ wall_height = input ("enter the height of the room in metres: ")
 
 # Calculations
 wall_length_float = float(wall_length)
-wall_length_height = float(wall_height)
-wall_length_width = float(wall_width)
+wall_height_float = float(wall_height)
+wall_width_float = float(wall_width)
 paint_litre_float = float(paint_litre)
 paint_cost_float = float(paint_cost)
 room_square = (((wall_length_float*wall_height_float)*2) + ((wall_width_float*wall_height_float)*2))
