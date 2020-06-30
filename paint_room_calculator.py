@@ -1,15 +1,15 @@
 from math import ceil
 
-#Paint parameters
+# Paint parameters
 paint_litre = input("How many Litres of paint per tin: ")
 paint_cost = input("How much does a tin paint cost: ")
 
-#Room parameters
+# Room parameters
 wall_length = input("enter the length of the room in metres: ")
 wall_width = input("enter the width of the room in metres: ")
 wall_height = input ("enter the height of the room in metres: ")
 
-#calculations
+# Calculations
 wall_length_float = float(wall_length)
 wall_length_height = float(wall_height)
 wall_length_width = float(wall_width)
@@ -21,5 +21,5 @@ tins_float = room_square / (paint_litre_float * paint_litre_squared)
 output_tins = int(ceil(tins_float))
 output_cost = ceil(float(output_tins)) * float(paint_cost)
 
-#print outputs
+# Print outputs
 print("Based on 8Sqm of coverage per litre you will need", output_tins,"tins", "it will cost £",output_cost)
