@@ -1,4 +1,5 @@
-degrees_celsuis = input("input your temperature in \u2103")
-degrees_celsuis_float = float(degrees_celsuis)
-degrees_farenheit = (degrees_celsuis_float * 9/5) + 32
-print(f"The temperature is {degrees_farenheit:.1f}\u2109")
+DEGC = "\u2103"
+DEGF = "\u2109"
+degrees_celsius = float(input("input your temperature in {DEGC}"))
+degrees_fahrenheit = (degrees_celsius * 9/5) + 32
+print(f"{degrees_celsius:.1f}{DEGC} is {degrees_fahrenheit:.1f}{DEGF}")
