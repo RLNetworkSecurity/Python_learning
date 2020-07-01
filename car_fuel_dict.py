@@ -6,7 +6,7 @@ LOWER_RATE = 25
 miles_traveled = float(input("Input your miles traveled: "))
 engine_size = (input(f"Is your engine size above {UPPER_LIMIT}, answer yes or no: "))
 
-engine_size_dictionary = {"yes":35, "no":120,}
+engine_size_dictionary = {"yes":35, "no":20,}
 fuel_allowance = int(engine_size_dictionary[engine_size])
 #calculation
 fuel_claim = miles_traveled * fuel_allowance/100
