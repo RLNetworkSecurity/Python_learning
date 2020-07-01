@@ -1,10 +1,11 @@
 # input variables
+import re
 input_word = input("Input your potential palindrome: ")
-nospace_word = input_word.replace(" ","")
-reverse_word = nospace_word[::-1]
+new_word = re.sub('[^A-Za-z]+', '', input_word)
+reverse_word = new_word[::-1]
 
 # if statement engine size and fuel calculation
-if input_word == reverse_word:
-    print(f" your word{input_word} is a palindrome as shown: {reverse_word}")
+if new_word == reverse_word:
+    print(f" your word{input_word} is a palindrome as shown: {new_word}")
 else:
-    print(f" your word{input_word} is not a palindrome as shown: {reverse_word}")
+    print(f" your word {input_word} is not a palindrome as shown: {new_word}")
