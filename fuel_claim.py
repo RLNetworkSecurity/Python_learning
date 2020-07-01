@@ -11,9 +11,9 @@ if ( engine_size <= UPPER_LIMIT ):
     fuel_allowance = LOWER_RATE
 else:
     fuel_allowance = UPPER_RATE
-    print("your fuel allowance is 35p per litre")
 
 #calculation
 fuel_claim = miles_traveled * fuel_allowance/100
 
+#output
 print(f"{miles_traveled:.2f} for {engine_size} results £{fuel_claim:.2f}")
