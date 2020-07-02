@@ -23,8 +23,7 @@ received_data = new_socket_object.recv(4096, 0)
 while True:
     decode_received_data = received_data.decode("utf-8")    
     if decode_received_data == "quit":
-        break
-        
+        break     
     else:
         decode_received_data = received_data.decode("utf-8")
         print(decode_received_data)
