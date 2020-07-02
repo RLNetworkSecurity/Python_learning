@@ -23,5 +23,5 @@ while True:
 
 encoded_message = bytes(input_message, 'ascii')
 my_socket.send(encoded_message, 0)
-print("Closing the connection!")
+print("The Client has chosen to Close this connection!")
 my_socket.close()
