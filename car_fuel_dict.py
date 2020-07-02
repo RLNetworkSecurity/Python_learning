@@ -6,6 +6,7 @@ LOWER_RATE = 25
 miles_traveled = float(input("Input your miles traveled: "))
 engine_size = input.lower((f"Is your engine size above {UPPER_LIMIT}, answer yes or no: "))
 
+#Calculations
 engine_size_dictionary = {"yes":UPPER_LIMIT, "no":LOWER_LIMIT,}
 fuel_allowance = int(engine_size_dictionary[engine_size])
 #calculation
