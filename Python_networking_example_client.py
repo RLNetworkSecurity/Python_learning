@@ -11,9 +11,10 @@ my_socket.connect(ipv4_tuple)
 
 #send a message (stream of bytes)
 print("Sending message.....")
-msg = b"Hello from batcave"
+input_message = input("input your message:")
+encoded_message = bytes(input_message, 'ascii')
 
-my_socket.send(msg, 0)
+my_socket.send(encoded_message, 0)
 
 #close connection
 print("Closing the connection!")
