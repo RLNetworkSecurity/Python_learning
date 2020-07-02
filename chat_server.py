@@ -18,12 +18,14 @@ print(f"waiting for connection on port {ipv4_tuple[1]}")
 new_socket_object, r_address = my_socket.accept()
 
 print(f"Connection made from: ", r_address)
-received_data = new_socket_object.recv(4096, 0)
+
 
 while True:
+    received_data = new_socket_object.recv(4096, 0)
     decode_received_data = received_data.decode("utf-8")    
     if decode_received_data == "quit":
-        break     
+        break
+        
     else:
         decode_received_data = received_data.decode("utf-8")
         print(decode_received_data)
