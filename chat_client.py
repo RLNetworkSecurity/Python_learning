@@ -12,7 +12,7 @@ my_socket.connect(ipv4_tuple)
 #if statement to keep giving an option for chat
 
 while True:
-    input_message = input("input your message: please type quit to quit")
+    input_message = input("To exit type quit to quit, input your message: ")
     
     if input_message == "quit":
         break
