@@ -25,6 +25,7 @@ with open('gash.txt', 'r') as infile:
        
 # create and write to a new file      
 #open a file for writing
+# change w to a to append to a file
 with open('food_order.txt', 'w') as new_file:
     while True:
         text = input("Enter some food ('bill' = stop):")
