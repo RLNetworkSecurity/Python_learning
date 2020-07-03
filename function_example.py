@@ -26,3 +26,8 @@ print(f"your output is {function_output_f}{DEGF}")
 #code
 function_output_c = f_to_c(function_output_f)
 print(f"your output is {function_output_c}{DEGC}")
+
+
+#function example multiple inputs, have to use the named variables in the input.
+def show_chars(*, num=10, symbol="$"):
+    print(symbol * num)
