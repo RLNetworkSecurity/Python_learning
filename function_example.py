@@ -4,10 +4,18 @@ DEGF = "\u2109"
 
 # define functions
 def c_to_f(num):
+    """
+    this is what we call a doc string
+    this function changes degrees C to degrees F
+    """
     return (num * 9/5) + 32
 
 #reverse function
 def f_to_c(num):
+    """
+    this is what we call a doc string
+    this function changes degrees F to degrees C
+    """
     return (num - 32) * 5/9
 
 # code
