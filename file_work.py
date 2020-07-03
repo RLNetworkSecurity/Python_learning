@@ -19,5 +19,19 @@ print(mydata)
 # recommended way to open files
 
 with open('gash.txt', 'r') as infile:
-  for line in infile:
-    print(line, end='')
+    for line in infile:
+        print(line, end='')
+
+       
+# create and write to a new file      
+#open a file for writing
+with open('food_order.txt', 'w') as new_file:
+    while True:
+        text = input("Enter some food ('bill' = stop):")
+        if text == "bill":
+            break
+        else:
+            new_file.write(text+"\n")
+
+print("Your order has been created")
+
