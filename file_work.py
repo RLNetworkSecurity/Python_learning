@@ -14,3 +14,10 @@ mydata = myfile.read.lines()
 
 #print the file
 print(mydata)
+
+
+# recommended way to open files
+
+with open('gash.txt', 'r') as infile:
+  for line in infile:
+    print(line, end='')
